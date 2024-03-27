@@ -18,7 +18,18 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-});
 
+  refreshToken: {
+    type: String,
+    required: true,
+  },
+  avatar: {
+    type: String,
+    required: true,
+  },
+  coverImage: {
+    type: String,
+  },
+});
 
 export const User = mongoose.model("User", userSchema);
